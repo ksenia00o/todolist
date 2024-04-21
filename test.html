@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="addNew" name="addNewList">
+    <button onclick="pushData()">Add</button>
+
+    <div class="liste" id="lists">
+        <ul>
+        </ul>
+    </div>
+    <script>function pushData() {
+            var n = [];
+            inputText = document.getElementById('addNew').value;
+            n.push(inputText);
+
+            document.querySelector('#lists ul').innerHTML += "<li>" + inputText + "</li>";
+        }</script>
+</body>
+
+</html>
